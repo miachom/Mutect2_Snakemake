@@ -1,0 +1,8 @@
+#samples.yaml
+
+base_file_name:
+  DTRCC19_kidney: /mnt/storage/labs/sviswanathan/tRCC_data/DTRCC19_kidney/v1/DTRCC19_kidney.bam
+  DTRCC19_AdjNormal: /mnt/storage/labs/sviswanathan/tRCC_data/DTRCC19_AdjNormal/v1/DTRCC19_AdjNormal.bam
+
+normals:
+ DTRCC19_kidney: DTRCC19_AdjNormal
