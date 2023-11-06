@@ -1,4 +1,3 @@
-# Mutect2_Snakemake
 
 ## Invoking Snakemake run
 
