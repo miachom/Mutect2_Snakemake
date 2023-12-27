@@ -1,0 +1,15 @@
+Rscript PureCN.R --out results/prod_pipeline/without_seg/filtered \
+--sampleid sTFE \
+--tumor results/cell_lines/cov/A4_CKDN230014515_rg_sorted_coverage_loess.txt.gz \
+--vcf /home/ma1111/tools/Mutect2_Snakemake/cell_lines/results/FilterMutectCalls/A4_CKDN230014515/filtered_all.vcf.gz  \
+--stats-file /home/ma1111/tools/Mutect2_Snakemake/cell_lines/results/FilterMutectCalls/A4_CKDN230014515/filtering_stats.tsv \
+--fun-segmentation PSCBS \
+--normaldb normalDB/normalDB_selected34.rds \
+--mapping-bias-file normalDB/bias_selected34.rds \
+--intervals baits_hg38_gca_intervals.txt \
+--snp-blacklist /mnt/storage/labs/sviswanathan/ucsc/SureSelect_Human_AII_Exon_V6_hg38_simple_repeats.bed \
+--base-quality-offset 20 \ # optional
+--max-copy-number 8 --min-purity 0.9 --max-purity 0.99 --max-segments 1000 --min-total-counts 20 --model-homozygous \
+--genome hg38 \
+--model betabin \
+--force --post-optimize --seed 123
