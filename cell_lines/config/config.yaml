@@ -1,0 +1,18 @@
+##Config file containing information for the mutect2.snakefile
+
+## Tools Path
+gatk_path: /mnt/storage/apps/gatk-4.3.0.0/gatk
+java: /usr/bin/java
+tabix: /usr/bin/tabix
+picard_jar: /home/ma1111/tools/picard.jar
+
+## Path to reference files
+reference_genome: /mnt/storage/labs/sviswanathan/GATK_ref/Homo_sapiens_assembly38.fasta
+reference_dict: /mnt/storage/labs/sviswanathan/GATK_ref/Homo_sapiens_assembly38.dict
+reference_index: /mnt/storage/labs/sviswanathan/GATK_ref/Homo_sapiens_assembly38.fasta.fai
+germline_resource: /mnt/storage/labs/sviswanathan/GATK_ref/af-only-gnomad.hg38.vcf.gz
+panel_of_normals: /mnt/storage/labs/sviswanathan/GATK_ref/MuTect2.PON.5210.vcf.gz
+variants_for_contamination: /mnt/storage/labs/sviswanathan/GATK_ref/cz_ref/mutect2-contamination-variants.hg38_primary.vcf.gz
+interval_list: /mnt/storage/labs/sviswanathan/tRCC_data/trcc_wes/S07604514_hs_hg38_SureSelect_Human_All_Exon_V6_r2/S07604514_Regions.bed
+realignment_index_bundle: /mnt/storage/labs/sviswanathan/GATK_ref/cz_ref/Homo_sapiens_assembly38.index_bundle
+cytoBand_list: /mnt/storage/labs/sviswanathan/GATK_ref/cz_ref/cytoBand_acen.hg38.interval_list
